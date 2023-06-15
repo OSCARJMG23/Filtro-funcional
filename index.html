@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-prin" style="z-index: 100;">
+        <div class="container logo-nav-container" >
+            <a href="#inicio" class="logo" style="color: white; text-decoration: none;">Car Washing</a>
+            <span class="menu-icon">Ver menu</span>
+            <nav class="navegacion">
+                <ul>
+                    <li><a href="#inicio" style="color: white; text-decoration: none;">Inicio</a></li>
+                    <li><a href="#qs" style="color: white; text-decoration: none;">Quienes Somos</a></li>
+                    <li><a href="#contacto" style="color: white; text-decoration: none;">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <div class="carousel-inner" style="margin-top: 8.5rem;">
+          <div class="carousel-item active c-item">
+            <img src="imagenes/imagen1.jpg" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">Manten tus vehiculos limpios</p>
+              <h1 class="display-1 fw-bolder text-capitalize">Campus Car Washing Center</h1>
+              <!-- <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Book a tour</button> -->
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="imagenes/imagen2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">Ofertas Especiales</p>
+              <p class="display-1 fw-bolder text-capitalize">Paquetes Promocionales</p>
+              <!-- <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">Book a tour</button> -->
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="imagenes/imagen3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">Difrentes Lugares</p>
+              <p class="display-1 fw-bolder text-capitalize">Varias Ubicaciones</p>
+              <!-- <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                data-bs-target="#booking-modal">Book a tour</button> -->
+            </div>
+          </div>
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <section class="main">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-12 d-flex align-items-center">
+                    <div class="text text-center">
+                        <h1 class="text-white">Create your best Experience</h1>
+                        <h2 class="text-white">By Becoming a part of Company family</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-10 col-sm-12">
+                    <div class="form-box px-5 py-4">
+                        <form id="formularioCliente">
+                            <h2 class="text-center mb-4">Registrar Cliente</h2>
+                            <input type="number" name="" placeholder="Numero de Identificacion" class="form-control mb-3" id="cedula">
+                            <input type="text" name="" placeholder="Nombres" class="form-control mb-3" id="nombres">
+                            <input type="text" name="" placeholder="Apellidos" class="form-control mb-3" id="apellidos">
+                            <input type="text" name="" placeholder="Placa del Auto" class="form-control mb-3" id="placaV">
+                            <select class="form-select mb-3" id="tipo-Vehiculo">
+                                <option>Servicio</option>
+                                <option >Automóvil</option>
+                                <option >Camioneta</option>
+                                <option >Autobús</option>
+                                <option >Camión de Carga</option>
+                            </select>
+                            <input type="email" name="" placeholder="Correo Electronico" class="form-control mb-3" id="correo">
+                            <input type="number" name="" placeholder="Telefono" class="form-control mb-3" id="telefono">
+                            <button class="register-btn form-control" type="submit">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="text" placeholder="Buscar" id="buscador">
+
+
+        <div class="table-responsive">
+          <table class="table  list editT" id="listaClientes" style="margin-top: 3rem; color: white;">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>N° Identificación</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Placa Auto</th>
+                    <th>Tipo de automóvil</th>
+                    <th>Correo Electrónico</th>
+                    <th>Telefono</th>
+                    <th>Opción</th>
+                </tr>
+            </thead>
+            <tbody id="padreClientes">
+    
+            </tbody>
+        </table>  
+        </div>
+    </section>
+    <section class="main-2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-12 d-flex align-items-center">
+                    <div class="text text-center">
+                        <h1 class="text-white">Create your best Experience</h1>
+                        <h2 class="text-white">By Becoming a part of Company family</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-10 col-sm-12">
+                    <div class="form-box px-5 py-4">
+                        <form id="formularioServicio">
+                            <h2 class="text-center mb-4">Registro de Servicios</h2>
+                            <input type="text" name="" placeholder="Nombre del Servicio" class="form-control mb-3" id="nombreServi">
+                            <input type="number" name="" placeholder="Valor del Servicio" class="form-control mb-3" id="valorServi">
+                            <input type="text" name="" placeholder="Descripcion" class="form-control mb-3" id="descripcionServi">
+                            <input type="number" name="" placeholder="Puntos" class="form-control mb-3" id="puntosServi">
+
+                            <button class="register-btn form-control" type="submit">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table  list editT" id="listaClientes" style="margin-top: 3rem; color: white">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nombre del Servicio</th>
+                    <th>Valor del Servicio</th>
+                    <th>Descripcion</th>
+                    <th>Puntos</th>
+                    <th>Opción</th>
+                </tr>
+            </thead>
+            <tbody id="padreServicios">
+    
+            </tbody>
+        </table>  
+        </div>
+    </section>
+    <section class="main-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-12 d-flex align-items-center">
+                    <div class="text text-center">
+                        <h1 class="text-white">Gestion de nuevos Clientes</h1>
+                        <h2 class="text-white">Ingresa al nuevo integrante de la familia</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-10 col-sm-12">
+                    <div class="form-box px-5 py-4">
+                        <form id="comprasServicios">
+                            <h2 class="text-center mb-4">Gestion de Compras</h2>
+                            <select id="selectCliente" class="form-select" aria-label="Default select example">
+                              <option selected>Cliente</option>
+                            </select>
+                            <select id="selectServicio" class="form-select" aria-label="Default select example">
+                              <option selected>Servicio</option>
+                            </select>
+                            <!-- <input type="password" name="" placeholder="password" class="form-control mb-3"> -->
+                            <button type="submit" class="register-btn form-control">Comprar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section>
+        <div class="table-responsive">
+      
+          <table class="table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Puntos</th>
+                </tr>
+            </thead>
+          
+            <tbody id="puntos-Clientes">
+          
+            </tbody>
+          </table>  
+        </div>
+      
+      </section>
+
+      <footer>
+        <!-- aqui lo ultimo -->
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="fa brans fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa brans fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class="fa brans fa-twitter"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa brans fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#qs">Somos</a></li>
+                    <li><a href="#contacto">Contactanos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>CopyRight &copy;2023; Designed by <span class="designer">Oscar</span></p>
+        </div>
+    </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
